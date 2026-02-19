@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Define the function to run when the button is clicked
     button.addEventListener('click', () => {
+        // Add animation effect
+        button.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            button.style.transform = 'scale(1)';
+        }, 100);
+
         clickCount++;
 
         if (clickCount === 1) {
